@@ -1,0 +1,21 @@
+[   
+    {
+    "Name": "Pull",
+    "Exercises": ["Deadlifts", "Pull Ups", "Rear Delt Fly", "Barbell Rows", "Bicep Curls", "Shrugs", "Lat Pulldowns", "Meadows Rows", "Dumbbell Rows", "Seated Cable Rows", "Face Pulls", "Incline Curls", "Hammer Curls", "EZ-Bar Curls"]
+    },
+
+    {
+    "Name": "Push",
+    "Exercises": ["Bench Press", "Overhead Press", "Cable Crossovers", "Dumbbell Lateral Raises", "Tricep Pushdown", "Incline Dumbbell Press", "Decline Bench Press", "Dumbbell chest Flyes", "Close-Grip Bench Press", "Incline Bench Press", "Dips", "Partial Lateral Raises", "Tricep Extension"]
+    },
+
+    {
+    "Name": "Legs",
+    "Exercises": ["Squats", "Romanian Deadlifts", "Hip Thrusts", "Lunges", "Hamstring Curls", "Front Squats", "Leg Press",  "Calf Raises", "Hack Squats", "Nordic Curls"]
+    },
+    
+    {
+    "Name": "Yoga",
+    "Exercises": ["Child's", "Downward Dog", "Warrior 2", "Cat/Cow", "Lotus", "Cobra", "Crane", "Triangle"]
+    }
+]
