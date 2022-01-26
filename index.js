@@ -13,8 +13,8 @@ app.get('/', (req, res) => {
 
 // Workout/User Controllers go here
 
-// const placeholderController = require('./controllers/placeholder');
-// app.use('/api/placeholder', placeholderController);
+const workoutController = require('./controllers/workout');
+app.use('/api/workout', workoutController);
 
 app.use((err, req, res, next) => {
 	const statusCode = res.statusCode || 500;
@@ -23,7 +23,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(app.get('port'), () => {
-	console.log(
-		`✅ PORT: ${app.get('port')} ${process.env.DATABASE_URL} 🌟`
-	);
+	console.log(`✅ PORT: ${app.get('port')} 🌟`);
 });

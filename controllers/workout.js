@@ -1,11 +1,12 @@
 const express = require('express');
 const router = express.Router();
-
-const User = require('../db/models/User');
 const Workout = require('../db/models/Workout');
 
-router.get('/api', (req, res) => {
+// const User = require('../db/models/User');
+
+router.get('/', (req, res) => {
 	Workout.find({}).then((workout) => {
+		console.log(res.json(workout));
 		res.json(workout);
 	});
 });
