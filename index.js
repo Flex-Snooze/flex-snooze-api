@@ -7,15 +7,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-Redirect;
 app.get('/', (req, res) => {
 	res.redirect('/api');
 });
 
 // Workout/User Controllers go here
 
-const placeholderController = require('./db/placeholder.js');
-app.use('/api/placeholder', placeholderController);
+// const placeholderController = require('./controllers/placeholder');
+// app.use('/api/placeholder', placeholderController);
 
 app.use((err, req, res, next) => {
 	const statusCode = res.statusCode || 500;
