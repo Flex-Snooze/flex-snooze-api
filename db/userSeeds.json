@@ -1,0 +1,6 @@
+[{
+    "name": "Test User",
+    "exercises": ["test exercise"],
+    "log": ["test log"],
+    "stats": "test stats"
+}]

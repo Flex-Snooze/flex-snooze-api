@@ -1,10 +1,11 @@
-// const mongoose = require('../db/connection');
+const mongoose = require('../db/connection');
+const Schema = mongoose.Schema;
 
-// const GifSchema = new mongoose.Schema({
-// 	name: String,
-// 	url: String,
-// });
+const WorkoutSchema = new mongoose.Schema({
+	name: String,
+	exercises: [String],
+});
 
-// const Gif = mongoose.model('Gif', GifSchema);
+const Workout = mongoose.model('Workout', WorkoutSchema);
 
-// module.exports = Gif;
+module.exports = Workout;

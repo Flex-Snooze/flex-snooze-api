@@ -1,13 +1,18 @@
-// const express = require('express');
-// const IceCream = require('../db/models/IceCream');
+const express = require('express');
+const router = express.Router();
 
-// const router = express.Router();
+const User = require('./models/User');
+const Workout = require('./models/Workout');
 
-// // Index: Get all ice creams
-// // http://localhost:3111/icecreams/
+router.get('/', (req, res) => {
+	Workout.find({}).then((workout) => {
+		res.json(workout);
+	});
+});
+
 // router.get('/', (req, res) => {
-// 	IceCream.find({}).then((cone) => {
-// 		res.json(cone);
+// 	User.find({}).then((user) => {
+// 		res.json(user);
 // 	});
 // });
 
@@ -55,9 +60,7 @@
 
 // module.exports = router;
 
-
 /////////////////////////
-
 
 // const express = require('express');
 // const router = express.Router();
@@ -161,4 +164,4 @@
 
 // // Export this router object so that it is accessible when we require the file elsewhere (IF YOU DONT DO THIS IT WILL BE HARD TO FIGURE OUT WHY YOU ARE GETTING ERRORS)
 
-// module.exports = router;
+module.exports = router;

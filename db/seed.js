@@ -1,18 +1,27 @@
-// const mongoose = require('../db/connection');
-// const seedData = require('./seeds.json');
-// const IceCream = require('./models/IceCream');
+const mongoose = require('../db/connection');
+const seedData = require('./seeds.json');
+const userSeedData = require('./userSeeds.json');
+const Workout = require('./models/Workout');
 
-// IceCream.deleteMany({})
-// 	.then(() => {
-// 		IceCream.insertMany(seedData).then((iceCream) => {
-// 			console.log('We have ice creams 😋😋😋');
-// 			console.log(iceCream);
-// 			process.exit();
-// 		});
-// 	})
-// 	.catch((err) => console.error(err));
+Workout.deleteMany({})
+	.then(() => {
+		Workout.insertMany(seedData).then((Workout) => {
+			console.log('We have Workout 💪💪💪');
+			console.log(Workout);
+			process.exit();
+		});
+	})
+	.catch((err) => console.error(err));
 
-
+User.deleteMany({})
+	.then(() => {
+		User.insertMany(seedData).then((User) => {
+			console.log('We have a User 🧍');
+			console.log(User);
+			process.exit();
+		});
+	})
+	.catch((err) => console.error(err));
 
 // Gif.deleteMany({})
 // 	.then(() => {
@@ -22,12 +31,12 @@
 // 			url: 'https://media4.giphy.com/media/OH9zWD6tKD9E5QL7Ru/giphy.gif?cid=ecf05e47mrtzzjgh6jt97csqzqqvf5cdhr4i17xertu99foq&rid=giphy.gif&ct=g',
 // 		});
 // 	})
-// 	// .then((gif) => {
-// 	// 	console.log('gif created!', gif);
-// 	// 	return gifSeeds.map((gif) => {
-// 	// 		return { ...gif, owner: gif._id };
-// 	// 	});
-// 	// })
+// 	.then((gif) => {
+// 		console.log('gif created!', gif);
+// 		return gifSeeds.map((gif) => {
+// 			return { ...gif, owner: gif._id };
+// 		});
+// 	})
 // 	.then(() => {
 // 		return Gif.insertMany(gifSeeds);
 // 	})
