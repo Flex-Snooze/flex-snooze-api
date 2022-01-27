@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const UserSchema = new Schema({
 	_id: Number,
 	name: String,
-	exercises: [{}],
+	workouts: [{}],
 	log: { type: [{}], required: false },
 	stats: { type: [String], required: false },
 });
