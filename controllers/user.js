@@ -14,40 +14,30 @@ router.get('/:id', (req, res) => {
 	});
 });
 
-router.post('/:id', async (req, res, next) => {
-	console.log(req.body);
-	try {
-		const userToUpdate = await User.findByIdAndUpdate(
-			req.params.id,
-			{ log: req.body },
-			{ new: true }
-		);
-		const user = await User.find({});
-		res.json(user);
-	} catch (error) {
-		next(error);
-	}
-});
+// router.post('/:id', async (req, res, next) => {
+// 	console.log(req.body);
+// 	try {
+// 		const userToUpdate = await User.findByIdAndUpdate(
+// 			req.params.id,
+// 			{ log: req.body },
+// 			{ new: true }
+// 		);
+// 		const user = await User.find({});
+// 		res.json(user);
+// 	} catch (error) {
+// 		next(error);
+// 	}
+// });
 
 // expects an object with fields {"name": String, "exercises":[String], "date": String}
 
-router.patch('/:id', async (req, res, next) => {
+router.post('/:id', async (req, res, next) => {
 	console.log(req.body);
 	try {
 		const userToUpdate = await User.findByIdAndUpdate(
 			req.params.id,
 
 			{ $push: { log: req.body } },
-			// {
-			// 	log: User.exercises.forEach((obj) => {
-			// 		req.body.forEach((loggedEx) => {
-			// 			obj.exercises = obj.exercises.filter((exercise) => {
-			// 				exercise !== loggedEx;
-			// 			});
-			// 			obj.exercises.push(loggedEx);
-			// 		});
-			// 	}),
-			// },
 			{ new: true }
 		);
 		const user = await User.find({});
