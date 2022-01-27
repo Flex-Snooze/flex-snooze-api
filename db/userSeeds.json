@@ -27,10 +27,10 @@
     "exercises": ["Bench Press", "Overhead Press", "Dumbbell Lateral Raises", "Tricep Pushdown", "Incline Dumbbell Press"], "date": "1-5-22"
     }, {
     "name": "Legs",
-    "exercises": ["Squats", "Romanian Deadlifts", "Hip Thrusts", "Lunges", "Hamstring Curls"], "date": "1-5-23"
+    "exercises": ["Squats", "Romanian Deadlifts", "Hip Thrusts", "Lunges", "Hamstring Curls"], "date": "1-5-22"
     },  {
     "name": "Yoga",
-    "exercises": ["Child's", "Child's", "Child's", "Child's", "Child's"], "date": "1-5-24"
+    "exercises": ["Child's", "Child's", "Child's", "Child's", "Child's"], "date": "1-5-22"
     }],
     "stats": ["test stat 1", "placeholder stat 2", "5 day streak!"]
 }]
