@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 4000);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -13,8 +13,8 @@ app.get('/', (req, res) => {
 
 // Workout/User Controllers go here
 
-const workoutController = require('./controllers/workout');
-app.use('/api/workout', workoutController);
+const userController = require('./controllers/user');
+app.use('/api/user', userController);
 
 app.use((err, req, res, next) => {
 	const statusCode = res.statusCode || 500;

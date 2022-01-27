@@ -1,6 +1,35 @@
 [{
     "name": "Test User",
-    "exercises": ["test exercise"],
-    "log": ["test log"],
-    "stats": "test stats"
+    "exercises": [   
+    {
+    "name": "Pull",
+    "exercises": ["Deadlifts", "Pull Ups", "Rear Delt Fly", "Barbell Rows", "Bicep Curls", "Shrugs", "Lat Pulldowns", "Meadows Rows", "Dumbbell Rows", "Seated Cable Rows", "Face Pulls", "Incline Curls", "Hammer Curls", "EZ-Bar Curls"]
+    },
+
+    {
+    "name": "Push",
+    "exercises": ["Bench Press", "Overhead Press", "Cable Crossovers", "Dumbbell Lateral Raises", "Tricep Pushdown", "Incline Dumbbell Press", "Decline Bench Press", "Dumbbell chest Flyes", "Close-Grip Bench Press", "Incline Bench Press", "Dips", "Partial Lateral Raises", "Tricep Extension"]
+    },
+
+    {
+    "name": "Legs",
+    "exercises": ["Squats", "Romanian Deadlifts", "Hip Thrusts", "Lunges", "Hamstring Curls", "Front Squats", "Leg Press",  "Calf Raises", "Hack Squats", "Nordic Curls"]
+    },
+    
+    {
+    "name": "Yoga",
+    "exercises": ["Child's", "Downward Dog", "Warrior 2", "Cat/Cow", "Lotus", "Cobra", "Crane", "Triangle"]
+    }
+],
+    "log": [{ 
+    "name": "Push",
+    "exercises": ["Bench Press", "Overhead Press", "Dumbbell Lateral Raises", "Tricep Pushdown", "Incline Dumbbell Press"], "date": "1-5-22"
+    }, {
+    "name": "Legs",
+    "exercises": ["Squats", "Romanian Deadlifts", "Hip Thrusts", "Lunges", "Hamstring Curls"], "date": "1-5-23"
+    },  {
+    "name": "Yoga",
+    "exercises": ["Child's", "Child's", "Child's", "Child's", "Child's"], "date": "1-5-24"
+    }],
+    "stats": ["test stat 1", "placeholder stat 2", "5 day streak!"]
 }]
