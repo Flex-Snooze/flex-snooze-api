@@ -6,7 +6,6 @@ const Workout = require('../db/models/Workout');
 
 router.get('/', (req, res) => {
 	Workout.find({}).then((workout) => {
-		console.log(res.json(workout));
 		res.json(workout);
 	});
 });
