@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const Workout = require('../db/models/Workout');
+const User = require('../db/models/User');
 
 // const User = require('../db/models/User');
 
 router.get('/', (req, res) => {
-	Workout.find({}).then((workout) => {
-		res.json(workout);
+	User.find({}).then((user) => {
+		res.json(user);
 	});
 });
 

@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const WorkoutSchema = new mongoose.Schema({
 	name: String,
 	exercises: [String],
+	date: { type: Date, required: false },
 });
 
 const Workout = mongoose.model('Workout', WorkoutSchema);
