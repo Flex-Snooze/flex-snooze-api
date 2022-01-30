@@ -1,8 +1,10 @@
 const mongoose = require('./connection');
 const Workout = require('./models/Workout');
-const seedData = require('./seeds.json');
 const User = require('./models/User');
+const Log = require('./models/Log');
+const seedData = require('./seeds.json');
 const userSeedData = require('./userSeeds.json');
+const logSeedData = require('./logSeedData.json');
 
 Workout.deleteMany({})
 	.then(() => {
@@ -19,6 +21,16 @@ User.deleteMany({})
 		User.insertMany(userSeedData).then((User) => {
 			console.log('We have a user 🧍');
 			console.log(User);
+			process.exit();
+		});
+	})
+	.catch((err) => console.error(err));
+
+Log.deleteMany({})
+	.then(() => {
+		Log.insertMany(logSeedData).then((Log) => {
+			console.log('We have a Log 🪵');
+			console.log(Log);
 			process.exit();
 		});
 	})

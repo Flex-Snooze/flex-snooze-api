@@ -1,7 +1,7 @@
 [{
     "_id": 5,
     "name": "Test User",
-    "workouts": [   
+    "workouts": [    
     {
     "name": "Pull",
     "exercises": ["Deadlifts", "Pull Ups", "Rear Delt Fly", "Barbell Rows", "Bicep Curls", "Shrugs", "Lat Pulldowns", "Meadows Rows", "Dumbbell Rows", "Seated Cable Rows", "Face Pulls", "Incline Curls", "Hammer Curls", "EZ-Bar Curls"]
