@@ -6,7 +6,6 @@ const UserSchema = new Schema({
 	name: String,
 	workouts: [{}],
 	log: { type: [{}], required: false },
-	stats: { type: [String], required: false },
 });
 
 const User = mongoose.model('User', UserSchema);
