@@ -11,8 +11,6 @@ app.get('/', (req, res) => {
 	res.redirect('/api');
 });
 
-// Workout/User Controllers go here
-
 const userController = require('./controllers/user');
 app.use('/api/user', userController);
 
