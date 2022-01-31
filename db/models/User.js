@@ -8,6 +8,7 @@ const UserSchema = new Schema({
 	name: String,
 	workouts: [WorkoutSchema],
 	// log: [LogSchema],
+	// log: [{ type: Schema.Types.ObjectId, ref: 'Log' }],
 	log: [{}],
 });
 

@@ -6,7 +6,7 @@ const LogSchema = new Schema({
 	exercises: [String],
 	date: { type: String, required: false },
 	owner: {
-		type: mongoose.Schema.Types.ObjectId,
+		type: mongoose.Types.ObjectId,
 		ref: 'User',
 		required: false,
 	},
