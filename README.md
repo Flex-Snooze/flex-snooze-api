@@ -3,7 +3,7 @@
 ## About
 
 This is a RESTful API for use with [Flex-Five](https://github.com/Flex-Snooze/flex-snooze-frontend) (née Flex-Snooze) to allow our users to create, read, update and destroy data.
-
+Main endpoints are https://flex-five.herokuapp.com/api/user/ & https://flex-five.herokuapp.com/api/log/
 ## Models & Schemas
 
 - User - Prototype currently only contains 1 test User
