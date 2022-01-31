@@ -14,6 +14,9 @@ app.get('/', (req, res) => {
 const userController = require('./controllers/user');
 app.use('/api/user', userController);
 
+const logController = require('./controllers/log');
+app.use('/api/log', logController);
+
 app.use((err, req, res, next) => {
 	const statusCode = res.statusCode || 500;
 	const message = err.message || 'Internal Server Error';

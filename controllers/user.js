@@ -14,6 +14,7 @@ router.get('/:id', (req, res) => {
 	});
 });
 
+
 router.post('/:id', async (req, res, next) => {
 	console.log(req.body);
 	try {
@@ -30,20 +31,20 @@ router.post('/:id', async (req, res, next) => {
 	}
 });
 
-router.patch('/:id', async (req, res, next) => {
-	console.log(req.body);
-	try {
-		const userToUpdate = await User.findByIdAndUpdate(
-			req.params.id,
+// router.patch('/:id', async (req, res, next) => {
+// 	console.log(req.body, 'test');
+// 	try {
+// 		const userToUpdate = await User.findByIdAndUpdate(
+// 			req.params.id,
 
-			{ $pull: { log: { _id: req.body } } },
-			{ new: true }
-		);
-		const user = await User.find({});
-		res.json(user);
-	} catch (error) {
-		next(error);
-	}
-});
+// 			{ $pull: log[req.body] },
+// 			{ new: true }
+// 		);
+// 		const user = await User.find({});
+// 		res.json(user);
+// 	} catch (error) {
+// 		next(error);
+// 	}
+// });
 
 module.exports = router;
