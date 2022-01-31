@@ -2,7 +2,7 @@
 
 ## About
 
-This is a RESTful api for use with [Flex-Five](https://github.com/Flex-Snooze/flex-snooze-frontend) (née Flex Snooze) to allow our users to create, read, update and destroy data.
+This is a RESTful API for use with [Flex-Five](https://github.com/Flex-Snooze/flex-snooze-frontend) (née Flex-Snooze) to allow our users to create, read, update and destroy data.
 
 ## Models & Schemas
 
