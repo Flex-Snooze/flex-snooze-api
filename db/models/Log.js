@@ -6,7 +6,7 @@ const LogSchema = new Schema({
 	exercises: [String],
 	date: { type: String, required: false },
 	owner: {
-		type: mongoose.Schema.Types.ObjectId,
+		type: mongoose.Types.ObjectId,
 		ref: 'User',
 		required: false,
 	},
@@ -14,4 +14,5 @@ const LogSchema = new Schema({
 
 const Log = mongoose.model('Log', LogSchema);
 
-module.exports = LogSchema;
+// module.exports = LogSchema;
+module.exports = Log;
